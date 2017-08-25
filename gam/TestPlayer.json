@@ -1,0 +1,16 @@
+{
+    "CREDITS": {
+        "BILLS": 0,
+        "CARD": true,
+        "CHIPS": 0,
+        "COINS": 41
+    },
+    "CURRENT WEAPON": "1111-1-1",
+    "EXP": 1000,
+    "NAME": "TestPlayer",
+    "RANK": 1,
+    "WEAPONS": [
+        "1111-1-1",
+        "1112-6-1"
+    ]
+}
