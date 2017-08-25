@@ -26,7 +26,14 @@ class Players:
         Save()._createPlayer(name)
 
 class User:
-
+    """
+    User:object:
+    
+    User can be called without Players, but i suggest i shouldnt be just for
+    clean code, if used with Players it will create a player if the player loaded
+    doesnt exist (wont raise an error and fixes the problem)
+    
+    """
     def __init__(self, name):
         self.name = name
         self._unloadPlayer()
@@ -63,19 +70,19 @@ class User:
 
     class Give:
         """
-        :coins: - give the player coins
+        coins - give the player coins
             ~ amount:int:
 
-        :bills: - give the player bills
+        bills - give the player bills
             ~ amount:int:
 
-        :chips: - give the player chips
+        chips - give the player chips
             ~ amount:int:
 
-        :exp: - give the player exp
+        exp - give the player exp
             ~ amount:int:
 
-        :sword: - give the player a sword
+        sword - give the player a sword
             ~ stag:str:
         """
         def __init__(self, user):
@@ -97,7 +104,10 @@ class User:
             _player()._give_sword(self.user, stag)
 
     class Take:
-
+        """
+        +-functions----------------
+        | coins | Take 
+        """
         def __init__(self, user):
             self.user = user
 
